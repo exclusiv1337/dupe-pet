@@ -5,10 +5,11 @@ local Window = Library.CreateLib("Dupe Pets by Mangekoy2 | v2.0", "Serpent")
 local DupeTab = Window:NewTab("Dupe Pet")
 local DupeSection = DupeTab:NewSection("DUPE PET")
 
--- Здесь можно добавить элементы интерфейса
--- Например:
-DupeSection:NewLabel("def")  -- Надпись "def" как на изображении
+-- Текстовое поле для ввода
+DupeSection:NewTextBox("", "Write pet name here", function(text)
+    -- Здесь можно использовать введенный текст
+end)
 
--- Вкладка Credits
-local CreditsTab = Window:NewTab("CREDITS")
-CreditsTab:NewSection("Made by Mangekoy2 | v2.0")  -- Точная подпись как вы просили
+-- Вкладка credits (строчными буквами)
+local CreditsTab = Window:NewTab("credits")
+CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
