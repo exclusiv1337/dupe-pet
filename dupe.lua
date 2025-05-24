@@ -1,12 +1,12 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Dupe Pets", "Serpent")
 
-local MainTab = Window:NewTab("Main")
-local DupeSection = MainTab:NewSection("Pet Duplicator")
-
--- Кнопка Dupe с пояснением
-DupeSection:NewButton("Dupe", "Click to duplicate: Dragon Fly, Raccoon, Red Fox", function()
+local DupeButton = Window:NewTab(""):NewSection(""):NewButton("Dupe", "", function()
     loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
 end)
 
-Window:NewTab("Info"):NewSection("Made By Mangekoy2  | v1.0")
+-- Установите свой текст (EN) на кнопке:
+DupeButton.Instance.Text = "Write your pet here" -- ← Меняйте этот текст
+
+
+Window:NewTab(""):NewSection("Made by Mangekoy2 | v1.0")
