@@ -3,7 +3,7 @@ local Window = Library.CreateLib("Dupe Pet by Mangekoy2 | v2.0", "Serpent")
 
 -- Вкладка Dupe Pet
 local DupeTab = Window:NewTab("Dupe Pet")
-local DupeSection = DupeTab:NewSection("DUPE PET")
+local DupeSection = DupeTab:NewSection("Dupe Pet")
 
 -- Текстовое поле
 local InputField = DupeSection:NewTextBox("", "Write any pet", function(text)
@@ -22,4 +22,3 @@ end)
 -- ОТДЕЛЬНАЯ вкладка Credits
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Made by Mangekoy2 | v2.0")
-
