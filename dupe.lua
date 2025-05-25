@@ -12,7 +12,7 @@ end)
 
 -- Кнопка Dupe
 Section1:NewButton("Dupe", "", function()
-    loadstring(game:HttpGet("https://pastefy.app/iRFe6rwv/raw"))()
+    loadstring(game:HttpGet("https://paste.ee/r/zMlHrdXW"))()
 end)
 
 -- Вкладка 2: Credits (точно как вы просили)
